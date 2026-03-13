@@ -1,21 +1,42 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdf7ec;
+  --background-dark-1: #f1ede2;
+  --foreground: #25293b;
+
+  /* Primary */
   --primary: #e44b46;
   --primary-dark-1: #cf443f;
   --primary-dark-2: #c13f3b;
-  --text: #25293b;
+
+  /* Text */
+  /* --text: #25293b; */
 }
 
 @theme {
   --color-background: var(--background);
+  --color-background-dark-1: var(--background-dark-1);
   --color-foreground: var(--foreground);
+
+  /* Primary */
   --color-primary: var(--primary);
   --color-primary-dark-1: var(--primary-dark-1);
   --color-primary-dark-2: var(--primary-dark-2);
+
+  /* Fonts */
   --font-poppins: var(--font-poppins);
+
+  /* Shadows */
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-float: 0 1px 2px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.06);
+  --shadow-popover: 0 10px 30px rgba(0, 0, 0, 0.12);
+  /* --shadow-inset:
+    inset 0 1px 2px rgba(0, 0, 0, 0.08),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.6); */
+  --shadow-inset: inset 0 0 6px rgba(0, 0, 0, 0.08);
+  --shadow-inset-strong: inset 0 0 16px rgba(0, 0, 0, 0.6);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -27,6 +48,6 @@
 
 body {
   background: var(--background);
-  color: var(--text);
+  color: var(--foreground);
   font-family: var(--font-poppins);
 }
